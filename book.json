@@ -1,0 +1,9 @@
+{
+    "author": "Brian Wortman",
+    "description": "Overview of some useful Elasticsearch features.",
+    "gitbook": "^3.2.3",
+    "root": "./",
+    "structure": {},
+    "title": "Elasticsearch Introductory Demo",
+    "plugins": [ "image-wrapper" ]
+  }
