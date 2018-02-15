@@ -1,6 +1,6 @@
 ## End Notes
 
-Please view the `companion video TODO!` on YouTube for a bit more information (e.g., tips on displaying search results on a Web page) and "color commentary." ;-)
+Please view the [companion video](https://youtu.be/WCYtgVtR628) on YouTube for a bit more information (e.g., tips on displaying search results on a Web page) and "color commentary." ;-)
 
 We've barely scratched the surface of Elasticsearch capabilities in this demo. For example, we haven't covered:
 

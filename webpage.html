@@ -8,35 +8,45 @@
     </style>
   </head>
   <body>
-      <h2>Documents</h2>
-      <h3>Doc 1</h3>
+      <h3>Documents</h3>
+      <h4>Doc 1</h4>
       <p>
             Hershoff, Blatburg, Jones, and Randolf<sup>&reg;</sup>  Attorneys specializing in <strong>ambulance chasing</strong>, are a global, innovation-driven group of <strong>specialists</strong> that develop & market products to improve financial health in more than 75 countries. Call our innovative offices in <ol><li>New York</li><li>Chicago</li><li>San Francisco</li></ol> for more information.
       </p>
-      <h3>Doc 2</h3>
+      <h4>Doc 2</h4>
       <p>
             <em>Jones</em> is a graduate of <a href=\"www.harvarduniversity.edu\">Harvard University</a>, and a <strong>committed</strong> believer in the value of ambulance chasing. He is your innovative <strong>go-to</strong><sup>&reg;</sup> guide in the area of <strong>frivolous lawsuits</strong>.<sup>1</sup>
       </p>
-      <h2>Highlighting of unprocessed text - TODO</h2>
+
+      <hr>
+
+      <h3>Highlighting of unprocessed text (bad)</h3>
       <p>
-          <ul>
-              <li>Hershoff, Blatburg, Jones, <match>and</match> Randolf<sup</li>
-              <li>>&reg;</sup><match>Attorneys</match> specializing in</li>
-              <li>strong>specialists</strong> that develop <match>&</match></li>
-              <li>improve financial health in more than 75 <match>countries</match></li>
-              <li>of <a href=\"www.harvarduniversity.edu\"><match>Harvard</match></li>
-              <li>University</a>, <match>and</match> a <strong>committed<</li>
-        </ul>           
+        Hershoff, Blatburg, Jones, <match>and</match> Randolf<sup ...
+        >&reg;</sup><match>Attorneys</match> specializing in ...
+        strong>specialists</strong> that develop <match>&</match> ...
+        improve financial health in more than 75 <match>countries</match> ...
+      </p>
+      <a href="www.foo.com">/About</a>
+      <p>
+        of <a href=\"www.harvarduniversity.edu\"><match>Harvard</match> ...
+        University</a>, <match>and</match> a <strong>committed< ...
         </strong> <!-- close the open tag from the unprocessed example above -->
       </p>
-      <h2>Highlighting of processed text - TODO</h2>
-      <ul>
-        <li>Hershoff, Blatburg, Jones, <match>and</match> Randolf</li>
-        <li>&reg; <match>Attorneys</match> specializing in</li>
-        <li>specialists that develop <match>&</match></li>
-        <li>improve financial health in more than 75 <match>countries</match></li>
-        <li>of <match>Harvard</match></li>
-        <li>University, <match>and</match> a committed</li>
-      </ul>
+      <a href="www.foo.com">/About/Jones</a>
+
+      <h3>Highlighting of processed text (good)</h3>
+      <p>
+        Hershoff, Blatburg, Jones, <match>and</match> Randolf ...
+        &reg; <match>Attorneys</match> specializing in ...
+        specialists that develop <match>&</match> ...
+        improve financial health in more than 75 <match>countries</match> ...
+      </p>
+      <a href="www.foo.com">/About</a>
+      <p>
+        of <match>Harvard</match> ...
+        University, <match>and</match> a committed ...
+      </p>
+      <a href="www.foo.com">/About/Jones</a>
     </body>
 </html>
